@@ -12,13 +12,10 @@ from keras.optimizers import adam
 from keras.layers.normalization import BatchNormalization
 from keras.layers.convolutional import *
 
-
-
-#gdrive/My Drive/Colab Notebooks/Dataset
+# CNN Training using keras
 #Dataset_Signature_Final.zip
-train_path = 'gdrive/My Drive/Colab Notebooks/User 2'
-valid_path = 'gdrive/My Drive/Colab Notebooks/Test'
-#test_path  = ''
+train_path = './User 2'
+valid_path = './Test'
 
 train_batches = ImageDataGenerator(rescale = 1./255).flow_from_directory(train_path,target_size=(224,224),classes=['real','forge'],batch_size = 16)
 valid_batches = ImageDataGenerator(rescale = 1./255).flow_from_directory(valid_path,target_size=(224,224),classes=['real','forge'],batch_size = 8)
@@ -39,5 +36,5 @@ model.summary()
 
 adam = Adam(lr = 0.0001)
 model.compile(loss=k.losses.categorical_crossentropy,optimizer = adam,metrics=['accuracy'])
-model.fit_generator(train_batches,steps_per_epoch = 36,validation_data= valid_batches,validation_steps = 20, epochs = 30 , verbose = 1)
-model.save('gdrive/My Drive/Colab Notebooks/signature_model_30epochs.h5')
+model.fit_generator(train_batches,steps_per_epoch = 36, validation_data = valid_batches, validation_steps = 20, epochs = 30 , verbose = 1)
+model.save('./signature_model_30epochs.h5')

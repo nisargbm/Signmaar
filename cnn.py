@@ -17,8 +17,7 @@ from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
 from keras import optimizers
 from keras.utils.data_utils import get_file
-
-
+# import matplotlib.pyplot as plt
 
 def VGG16(filepath, input_shape=None , classes=1000):
     model = Sequential()
@@ -96,7 +95,35 @@ def train_cnn_model(cnn_weights_filepath, input_shape, train_dataset_path, valid
     adam = Adam(lr = 0.0001)
     model.compile(loss=k.losses.categorical_crossentropy,optimizer = gd,metrics=['accuracy'])
 
-    model.fit_generator(train_batches, steps_per_epoch=36, validation_data=valid_batches, validation_steps=20, epochs=50, verbose=1)
+    history = model.fit_generator(train_batches, steps_per_epoch=36, validation_data=valid_batches, validation_steps=20, epochs=50, verbose=1)
+
+    # UNCOMMENT TO VIEW VISUALIZATION OF PERFORMANCE BY LOSS MEASURE
+    # UNCOMMENT matplotlib in the headers
+    #
+    # loss = history.history['loss']
+    # val_loss = history.history['val_loss']
+    # epochs = range(1, len(loss) + 1)
+    # plt.plot(epochs, loss, color='red', label='Training loss')
+    # plt.plot(epochs, val_loss, color='green', label='Validation loss')
+    # plt.title('Training and validation loss')
+    # plt.xlabel('Epochs')
+    # plt.ylabel('Loss')
+    # plt.legend()
+    # plt.show()
+
+    # UNCOMMENT TO VIEW VISUALIZATION OF PERFORMANCE BY ACCURACY
+    # UNCOMMENT matplotlib in the headers
+    #
+    # acc = history.history['acc']
+    # val_acc = history.history['val_acc']
+    # plt.plot(epochs, acc, color='red', label='Training acc')
+    # plt.plot(epochs, val_acc, color='green', label='Validation acc')
+    # plt.title('Training and validation accuracy')
+    # plt.xlabel('Epochs')
+    # plt.ylabel('Loss')
+    # plt.legend()
+    # plt.show()
+
     return model
     
 
