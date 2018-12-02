@@ -53,3 +53,42 @@ The source code folder contains the relevant datasets. If any new datasets are a
 * **Rahul Singh**- [Rahul](https://github.com/RahulSinghh)
 * **Meet Shah**
 * **Aditya Malshikhare**- [The Paired Electron](https://github.com/thePairedElectron)
+
+## Future Work
+We are planning to build a fully pledged cheque and DD processing framework which will be the global standard for advanced image analysis and intelligent recognition software used to seamlessly, precisely and securely process checks and other payment documentation by banks, financial institutions and other progressive corporations around the world. Our framework will focus on to be a pioneer that helps give greater confidence, freedom and funds accessibility to banks and its customers alike. By using this framework, consumers can enjoy a time-savings and more secure check processing benefits– which come in handy for today’s fast-paced society.
+
+Applications: Information Verification, Secure Transactions and Fraud Detection
+
+As our framework can be entrusted to help process financial information and transactions, it recognizes that three issues are paramount for our customers: making sure the extracted fields, including the courtesy (CAR) and legal (LAR) amounts, are correct, verifying the parties on each side of the transaction are legitimate by performing positive-pay functionality, and ensuring the transaction is completed quickly and securely. Capturing and recognizing the data found on each payment is a crucial and multi-dimensional capability that our framework will provide. In fact, it can be used during millions of successful transactions every day, helping to minimize errors and detect fraud within the global payment market.
+
+Banks can shape their operations to utilize our framework as their core engine. From branches and teller windows, to back offices and central processes, ATMs, merchants, fraud applications and more – you can bank securely from almost anywhere in the world, and our framework will support these needs. Intelligent Word Recognition (IWR), ICR, OCR and handwriting analysis combined on one product make it possible.
+
+## Key features that we dreamed about
+ • Signature Verification
+ 
+ • CAR / LAR Mismatch Detection
+ 
+ • Post-Dated / Slate-Dated Check Detection
+ 
+ • Positive Pay / Payee Name Verification
+ 
+ • Black List Payee Name Verification
+ 
+ • Rear Endorsement Detection
+ 
+ • Cursive Handwritten Fields
+ 
+ 
+ • MICR Code Recognition
+ 
+ • Memo Line Recognition
+ 
+ • Check Usability and Validity Tests
+ 
+ • Payment Type Classification
+ 
+ • Money Order Detection and Recognition
+ 
+ • Document Identifier
+ 
+ • Coupon Assisted Amount Decisioning
