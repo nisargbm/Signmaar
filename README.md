@@ -46,3 +46,10 @@ CNN training section has been commented. Other 2 sections are used for predictio
 The source code folder contains the relevant datasets. If any new datasets are added within the folder, kindly change the location path. All location paths can be changed in the controller.py file and no changes are required in any other file.
 
 #### The source code is also available [here](https://drive.google.com/file/d/1EEL0HGg7W-9GCJLhn3mVZYBL5j-KD5I9/view?usp=sharing)
+
+## Authors
+
+* **Nisarg Mistry**- [Nisarg](https://github.com/nisargbm)
+* **Rahul Singh**- [Rahul](https://github.com/RahulSinghh)
+* **Meet Shah**
+* **Aditya Malshikhare**- [The Paired Electron](https://github.com/thePairedElectron)
